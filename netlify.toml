@@ -2,6 +2,14 @@
   command = "npm run build"
   publish = "dist"
 
+# Redirect www to non-www
+[[redirects]]
+  from = "https://www.homehealthcare.emrs.ae/*"
+  to = "https://homehealthcare.emrs.ae/:splat"
+  status = 301
+  force = true
+
+# Catch-all for SPA routing
 [[redirects]]
   from = "/*"
   to = "/index.html"

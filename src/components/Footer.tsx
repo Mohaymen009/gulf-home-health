@@ -25,16 +25,21 @@ const Footer = () => (
             UAE's trusted home healthcare provider. Licensed professionals delivering compassionate medical care at your doorstep, 24/7.
           </p>
           <div className="flex gap-3">
-            {["facebook", "instagram", "twitter", "linkedin"].map((s) => (
+            {[
+              { name: "facebook", href: "https://facebook.com" },
+              { name: "instagram", href: "https://instagram.com" },
+              { name: "twitter", href: "https://twitter.com" },
+              { name: "linkedin", href: "https://ae.linkedin.com/in/emrs-ambulance-services-llc-9270011b5" },
+            ].map((s) => (
               <a
-                key={s}
-                href={`https://${s}.com`}
+                key={s.name}
+                href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Follow us on ${s}`}
+                aria-label={`Follow us on ${s.name}`}
                 className="w-9 h-9 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary/80 transition-colors"
               >
-                <span className="text-xs font-bold uppercase text-primary-foreground">{s[0]}</span>
+                <span className="text-xs font-bold uppercase text-primary-foreground">{s.name[0]}</span>
               </a>
             ))}
           </div>
@@ -90,6 +95,7 @@ const Footer = () => (
 
       <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/50">
         <p>© {new Date().getFullYear()} EMRS Home Healthcare. All rights reserved.</p>
+        <p>Al Qusais Industrial Area, Dubai, United Arab Emirates</p>
         <p>Home Healthcare UAE — Doctor on Call Dubai — Blood Tests at Home Abu Dhabi</p>
       </div>
     </div>
