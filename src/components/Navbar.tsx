@@ -17,8 +17,8 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-border/50">
       <nav className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="flex items-center gap-2">
-          <img src="/logo.png" alt="EMRS Logo" className="h-[4.5rem] w-auto object-contain" />
+        <a href="#" className="flex items-center">
+          <img src="/logo.png" alt="EMRS Logo" className="h-[4.5rem] w-auto object-contain -mr-6 -ml-3" />
           <span className="font-heading font-bold text-xl text-foreground">EMRS</span>
         </a>
 
