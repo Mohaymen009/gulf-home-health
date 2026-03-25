@@ -16,10 +16,11 @@ const Footer = () => (
     <div className="container">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         <div>
-          <div className="flex items-center gap-1 mb-4">
+          <div className="flex items-center gap-1 mb-1">
             <img src="/logo.png" alt="EMRS Logo" className="h-20 w-auto object-contain -mr-4 -ml-2" />
             <span className="font-heading font-bold text-xl text-primary-foreground">EMRS</span>
           </div>
+          <p className="text-xs text-primary-foreground/60 font-medium tracking-widest mb-4 uppercase">E M R S Ambulance Services L.L.C</p>
           <p className="text-sm leading-relaxed mb-6">
             UAE's trusted home healthcare provider. Licensed professionals delivering compassionate medical care at your doorstep, 24/7.
           </p>

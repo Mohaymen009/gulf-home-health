@@ -15,7 +15,7 @@ import FloatingButtons from "@/components/FloatingButtons";
 const Index = () => (
   <>
     <Helmet>
-      <title>EMRS 24/7 Home Healthcare</title>
+      <title>EMRS Home Healthcare UAE | Doctor on Call 24/7</title>
       <meta
         name="description"
         content="Home healthcare UAE: Doctor on call, at-home blood tests, IV drips & health checkups. Fast, licensed, and convenient care at your doorstep."
