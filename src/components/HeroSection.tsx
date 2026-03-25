@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Phone, CalendarCheck, ShieldCheck, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/hero-healthcare.jpg";
+import heroImg from "@/assets/nurse_doctor.webp";
 
 const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20" id="hero">

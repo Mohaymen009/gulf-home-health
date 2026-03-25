@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ShieldCheck, Heart, Users, Award } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "150+", label: "Licensed Professionals" },
+  { icon: Users, value: "Dedicated", label: "Licensed Professionals" },
   { icon: Award, value: "24/7", label: "Availability" },
   { icon: ShieldCheck, value: "7", label: "Emirates Covered" },
   { icon: Heart, value: "100%", label: "Patient Commitment" },
@@ -29,7 +29,7 @@ const AboutSection = () => (
             <p>
               Our mission is simple: eliminate barriers to quality healthcare. Whether you're a busy professional in Dubai,
               a family in Abu Dhabi, an elderly resident in Sharjah, or a hotel guest seeking medical assistance — our team
-              of over 150 licensed doctors, nurses, and therapists is ready to serve you.
+              of licensed doctors, nurses, and therapists is ready to serve you.
             </p>
             <p>
               We combine cutting-edge medical expertise with genuine compassion, cultural sensitivity, and the highest
