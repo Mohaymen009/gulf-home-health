@@ -18,10 +18,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-border/50">
       <nav className="container flex items-center justify-between h-16 md:h-20">
         <a href="#" className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-lg gradient-hero flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-lg">E+</span>
-          </div>
-          <span className="font-heading font-bold text-xl text-foreground">EMRS</span>
+          <img src="/logo.png" alt="EMRS Logo" className="h-12 w-auto object-contain" />
         </a>
 
         <ul className="hidden lg:flex items-center gap-8">

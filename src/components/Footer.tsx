@@ -17,10 +17,7 @@ const Footer = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-9 h-9 rounded-lg gradient-cta flex items-center justify-center">
-              <span className="text-secondary-foreground font-heading font-bold text-lg">E+</span>
-            </div>
-            <span className="font-heading font-bold text-xl text-primary-foreground">EMRS</span>
+            <img src="/logo.png" alt="EMRS Logo" className="h-16 w-auto object-contain" />
           </div>
           <p className="text-sm leading-relaxed mb-6">
             UAE's trusted home healthcare provider. Licensed professionals delivering compassionate medical care at your doorstep, 24/7.
