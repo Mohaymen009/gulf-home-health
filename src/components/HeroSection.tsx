@@ -6,7 +6,6 @@ import heroImg from "@/assets/hero-healthcare.jpg";
 const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20" id="hero">
     <div className="absolute inset-0 gradient-hero" />
-    <div className="absolute inset-0 bg-[url('/placeholder.svg')] opacity-5 bg-repeat" />
 
     <div className="container relative z-10 grid lg:grid-cols-2 gap-12 items-center py-16 md:py-24">
       <motion.div

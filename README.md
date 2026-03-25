@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# EMRS Home Healthcare
 
-TODO: Document your project here
+Project documentation for EMRS Home Healthcare UAE.
