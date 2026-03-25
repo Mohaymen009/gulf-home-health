@@ -10,17 +10,18 @@ import AboutSection from "@/components/AboutSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import FloatingButtons from "@/components/FloatingButtons";
 
 const Index = () => (
   <>
     <Helmet>
-      <title>Home Healthcare UAE | Doctor on Call Dubai | CareAtHome</title>
+      <title>EMRS 24/7 Home Healthcare</title>
       <meta
         name="description"
-        content="CareAtHome is UAE's leading home healthcare provider. Doctor on call, blood tests at home, IV drips, nursing care, physiotherapy, and health checkups across Dubai, Abu Dhabi, Sharjah, and all Emirates. Book now!"
+        content="Home healthcare UAE: Doctor on call, at-home blood tests, IV drips & health checkups. Fast, licensed, and convenient care at your doorstep."
       />
       <meta name="keywords" content="home healthcare UAE, doctor on call Dubai, blood tests at home Abu Dhabi, IV drips at home UAE, health checkup at home Dubai, nursing care at home UAE" />
-      <link rel="canonical" href="https://careathome.ae" />
+      <link rel="canonical" href="https://emrs.ae" />
     </Helmet>
     <Navbar />
     <main>
@@ -35,6 +36,7 @@ const Index = () => (
       <CTASection />
     </main>
     <Footer />
+    <FloatingButtons />
   </>
 );
 

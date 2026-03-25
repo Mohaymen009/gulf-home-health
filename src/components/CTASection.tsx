@@ -20,11 +20,15 @@ const CTASection = () => (
           Book a doctor, nurse, or therapist now. Available 24/7 across all Emirates.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Button size="lg" className="gradient-cta text-secondary-foreground border-0 hover:opacity-90 font-bold text-base px-10 py-6 shadow-elevated">
-            <CalendarCheck className="w-5 h-5 mr-2" /> Book Now
+          <Button size="lg" asChild className="gradient-cta text-secondary-foreground border-0 hover:opacity-90 font-bold text-base px-10 py-6 shadow-elevated">
+            <a href="https://wa.me/971554728133?text=Hi%20%F0%9F%91%8B%2C%20I%E2%80%99m%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer">
+              <CalendarCheck className="w-5 h-5 mr-2" /> Book Now
+            </a>
           </Button>
-          <Button size="lg" variant="outline" className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 font-bold text-base px-10 py-6">
-            <Phone className="w-5 h-5 mr-2" /> Call +971 4 555 1234
+          <Button size="lg" variant="outline" asChild className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 font-bold text-base px-10 py-6">
+            <a href="tel:+971554728133">
+              <Phone className="w-5 h-5 mr-2" /> Call +971 55 472 8133
+            </a>
           </Button>
         </div>
       </motion.div>

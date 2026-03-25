@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 
 const emirates = [
-  { name: "Dubai", highlight: true },
-  { name: "Abu Dhabi", highlight: true },
-  { name: "Sharjah", highlight: true },
-  { name: "Ajman", highlight: false },
-  { name: "Ras Al Khaimah", highlight: false },
-  { name: "Umm Al Quwain", highlight: false },
-  { name: "Fujairah", highlight: false },
+  "Dubai",
+  "Abu Dhabi",
+  "Sharjah",
+  "Ajman",
+  "Ras Al Khaimah",
+  "Umm Al Quwain",
+  "Fujairah",
 ];
 
 const CoverageSection = () => (
@@ -35,22 +35,18 @@ const CoverageSection = () => (
       </motion.div>
 
       <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-        {emirates.map((e, i) => (
+        {emirates.map((name, i) => (
           <motion.div
-            key={e.name}
+            key={name}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
-            className={`flex items-center gap-3 px-6 py-4 rounded-xl backdrop-blur-sm border transition-all hover:scale-105 ${
-              e.highlight
-                ? "bg-primary-foreground/15 border-primary-foreground/30"
-                : "bg-primary-foreground/8 border-primary-foreground/15"
-            }`}
+            className="flex items-center gap-3 px-6 py-4 rounded-xl backdrop-blur-sm border transition-all hover:scale-105 bg-primary-foreground/15 border-primary-foreground/30"
           >
-            <MapPin className={`w-5 h-5 ${e.highlight ? "text-secondary" : "text-primary-foreground/70"}`} />
-            <span className={`font-heading font-bold ${e.highlight ? "text-primary-foreground text-lg" : "text-primary-foreground/80"}`}>
-              {e.name}
+            <MapPin className="w-5 h-5 text-secondary" />
+            <span className="font-heading font-bold text-primary-foreground text-lg">
+              {name}
             </span>
           </motion.div>
         ))}

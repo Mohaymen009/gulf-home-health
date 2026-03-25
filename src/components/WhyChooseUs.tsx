@@ -17,7 +17,7 @@ const WhyChooseUs = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Why Choose CareAtHome</span>
+        <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Why Choose EMRS</span>
         <h2 className="text-3xl md:text-4xl font-extrabold mt-3 text-foreground">
           Trusted Home Healthcare Across the UAE
         </h2>

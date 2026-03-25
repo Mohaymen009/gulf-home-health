@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Stethoscope, TestTube, Droplets, HeartPulse, Activity, Baby, UserRound, Syringe } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const services = [
   { icon: Stethoscope, title: "Doctor on Call", desc: "Board-certified physicians visit your home for consultations, diagnosis, and treatment plans.", slug: "/doctor-on-call" },
@@ -45,18 +44,9 @@ const ServicesSection = () => (
               <s.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
             </div>
             <h3 className="font-heading font-bold text-foreground mb-2">{s.title}</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">{s.desc}</p>
-            <span className="text-primary font-semibold text-sm group-hover:text-secondary transition-colors">
-              Learn More →
-            </span>
+            <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
           </motion.div>
         ))}
-      </div>
-
-      <div className="text-center mt-12">
-        <Button size="lg" className="gradient-cta text-secondary-foreground border-0 hover:opacity-90 font-bold px-10 py-6">
-          View All Services
-        </Button>
       </div>
     </div>
   </section>

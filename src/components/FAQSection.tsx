@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "How do I book an at-home blood test or IV drip?",
-    a: "You can book through our website by clicking 'Book Now', calling our 24/7 hotline at +971 4 555 1234, or sending us a WhatsApp message. Our team will confirm your appointment, explain any preparation needed, and ensure a licensed professional arrives at your scheduled time.",
+    a: "You can book through our website by clicking 'Book Now', calling our 24/7 hotline at +971 55 472 8133, or sending us a WhatsApp message. Our team will confirm your appointment, explain any preparation needed, and ensure a licensed professional arrives at your scheduled time.",
   },
 ];
 

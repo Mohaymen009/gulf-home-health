@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { ShieldCheck, Heart, Users, Award } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "10,000+", label: "Patients Served" },
-  { icon: Award, value: "150+", label: "Licensed Professionals" },
+  { icon: Users, value: "150+", label: "Licensed Professionals" },
+  { icon: Award, value: "24/7", label: "Availability" },
   { icon: ShieldCheck, value: "7", label: "Emirates Covered" },
-  { icon: Heart, value: "4.9/5", label: "Patient Satisfaction" },
+  { icon: Heart, value: "100%", label: "Patient Commitment" },
 ];
 
 const AboutSection = () => (
@@ -17,13 +17,13 @@ const AboutSection = () => (
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-secondary font-semibold text-sm uppercase tracking-wider">About CareAtHome</span>
+          <span className="text-secondary font-semibold text-sm uppercase tracking-wider">About EMRS Home Healthcare</span>
           <h2 className="text-3xl md:text-4xl font-extrabold mt-3 text-foreground mb-6">
             Compassionate Home Healthcare Built for the UAE
           </h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Founded in the heart of the UAE, CareAtHome is a DHA-licensed and MOH-approved home healthcare provider
+              Founded in the heart of the UAE, EMRS Home Healthcare is a DHA-licensed and MOH-approved home healthcare provider
               dedicated to bringing world-class medical services directly to patients across all seven Emirates.
             </p>
             <p>
