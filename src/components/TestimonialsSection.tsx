@@ -3,9 +3,9 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Al Maktoum",
+    name: "Sarah Al Hashimi",
     location: "Dubai Marina",
-    text: "CareAtHome sent a doctor within 30 minutes when my son had a high fever at midnight. Professional, caring, and incredibly efficient. I can't recommend them enough.",
+    text: "EMRS sent a doctor within 30 minutes when my son had a high fever at midnight. Professional, caring, and incredibly efficient. I can't recommend them enough.",
     rating: 5,
   },
   {

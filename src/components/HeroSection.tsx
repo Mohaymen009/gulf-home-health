@@ -1,16 +1,14 @@
 import { motion } from "framer-motion";
-import { Phone, CalendarCheck, ShieldCheck, Clock, Star } from "lucide-react";
+import { Phone, CalendarCheck, ShieldCheck, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImg from "@/assets/hero-healthcare.jpg";
 
 const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20" id="hero">
-    {/* Background */}
     <div className="absolute inset-0 gradient-hero" />
     <div className="absolute inset-0 bg-[url('/placeholder.svg')] opacity-5 bg-repeat" />
 
     <div className="container relative z-10 grid lg:grid-cols-2 gap-12 items-center py-16 md:py-24">
-      {/* Left */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -35,23 +33,24 @@ const HeroSection = () => (
         </p>
 
         <div className="flex flex-wrap gap-4 mb-10">
-          <Button size="lg" className="gradient-cta text-secondary-foreground border-0 hover:opacity-90 font-bold text-base px-8 py-6 shadow-elevated">
-            <CalendarCheck className="w-5 h-5 mr-2" /> Book Now
+          <Button size="lg" asChild className="gradient-cta text-secondary-foreground border-0 hover:opacity-90 font-bold text-base px-8 py-6 shadow-elevated">
+            <a href="https://wa.me/971554728133?text=Hi%20%F0%9F%91%8B%2C%20I%E2%80%99m%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer">
+              <CalendarCheck className="w-5 h-5 mr-2" /> Book Now
+            </a>
           </Button>
-          <Button size="lg" variant="outline" className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 font-bold text-base px-8 py-6 backdrop-blur-sm">
-            <Phone className="w-5 h-5 mr-2" /> Call a Doctor
+          <Button size="lg" variant="outline" asChild className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 font-bold text-base px-8 py-6 backdrop-blur-sm">
+            <a href="tel:+971554728133">
+              <Phone className="w-5 h-5 mr-2" /> Call a Doctor
+            </a>
           </Button>
         </div>
 
-        {/* Trust badges */}
         <div className="flex flex-wrap gap-6 text-sm text-primary-foreground/80">
-          <div className="flex items-center gap-2"><Clock className="w-4 h-4" /> 45-Min Response</div>
-          <div className="flex items-center gap-2"><Star className="w-4 h-4 fill-secondary text-secondary" /> 4.9/5 Rating</div>
-          <div className="flex items-center gap-2"><ShieldCheck className="w-4 h-4" /> 10,000+ Patients</div>
+          <div className="flex items-center gap-2"><Clock className="w-4 h-4" /> 24/7 Availability</div>
+          <div className="flex items-center gap-2"><ShieldCheck className="w-4 h-4" /> Licensed Professionals</div>
         </div>
       </motion.div>
 
-      {/* Right - Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -67,7 +66,6 @@ const HeroSection = () => (
               loading="eager"
             />
           </div>
-          {/* Floating card */}
           <div className="absolute -bottom-6 -left-6 glass rounded-xl p-4 shadow-elevated border border-border/50 animate-float">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full gradient-cta flex items-center justify-center">

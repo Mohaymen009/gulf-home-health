@@ -19,12 +19,11 @@ const Navbar = () => {
       <nav className="container flex items-center justify-between h-16 md:h-20">
         <a href="#" className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-lg gradient-hero flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-lg">C+</span>
+            <span className="text-primary-foreground font-heading font-bold text-lg">E+</span>
           </div>
-          <span className="font-heading font-bold text-xl text-foreground">CareAtHome</span>
+          <span className="font-heading font-bold text-xl text-foreground">EMRS</span>
         </a>
 
-        {/* Desktop Nav */}
         <ul className="hidden lg:flex items-center gap-8">
           {navLinks.map((l) => (
             <li key={l.href}>
@@ -36,21 +35,21 @@ const Navbar = () => {
         </ul>
 
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:+97145551234" className="flex items-center gap-2 text-sm font-semibold text-primary">
-            <Phone className="w-4 h-4" /> +971 4 555 1234
+          <a href="tel:+971554728133" className="flex items-center gap-2 text-sm font-semibold text-primary">
+            <Phone className="w-4 h-4" /> +971 55 472 8133
           </a>
-          <Button className="gradient-cta text-secondary-foreground border-0 hover:opacity-90 font-semibold px-6">
-            Book Now
+          <Button asChild className="gradient-cta text-secondary-foreground border-0 hover:opacity-90 font-semibold px-6">
+            <a href="https://wa.me/971554728133?text=Hi%20%F0%9F%91%8B%2C%20I%E2%80%99m%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer">
+              Book Now
+            </a>
           </Button>
         </div>
 
-        {/* Mobile Toggle */}
         <button className="lg:hidden p-2" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       {open && (
         <div className="lg:hidden glass border-t border-border/50 animate-fade-in-up">
           <ul className="container py-4 space-y-3">
@@ -66,11 +65,13 @@ const Navbar = () => {
               </li>
             ))}
             <li className="pt-2 flex flex-col gap-3">
-              <a href="tel:+97145551234" className="flex items-center gap-2 text-sm font-semibold text-primary">
-                <Phone className="w-4 h-4" /> +971 4 555 1234
+              <a href="tel:+971554728133" className="flex items-center gap-2 text-sm font-semibold text-primary">
+                <Phone className="w-4 h-4" /> +971 55 472 8133
               </a>
-              <Button className="gradient-cta text-secondary-foreground border-0 w-full font-semibold">
-                Book Now
+              <Button asChild className="gradient-cta text-secondary-foreground border-0 w-full font-semibold">
+                <a href="https://wa.me/971554728133?text=Hi%20%F0%9F%91%8B%2C%20I%E2%80%99m%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer">
+                  Book Now
+                </a>
               </Button>
             </li>
           </ul>

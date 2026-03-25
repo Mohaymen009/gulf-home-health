@@ -15,13 +15,12 @@ const Footer = () => (
   <footer className="bg-foreground text-primary-foreground/80 pt-16 pb-8">
     <div className="container">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-        {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-4">
             <div className="w-9 h-9 rounded-lg gradient-cta flex items-center justify-center">
-              <span className="text-secondary-foreground font-heading font-bold text-lg">C+</span>
+              <span className="text-secondary-foreground font-heading font-bold text-lg">E+</span>
             </div>
-            <span className="font-heading font-bold text-xl text-primary-foreground">CareAtHome</span>
+            <span className="font-heading font-bold text-xl text-primary-foreground">EMRS</span>
           </div>
           <p className="text-sm leading-relaxed mb-6">
             UAE's trusted home healthcare provider. Licensed professionals delivering compassionate medical care at your doorstep, 24/7.
@@ -42,7 +41,6 @@ const Footer = () => (
           </div>
         </div>
 
-        {/* Services */}
         <div>
           <h4 className="font-heading font-bold text-primary-foreground mb-4">Services</h4>
           <ul className="space-y-2">
@@ -54,7 +52,6 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h4 className="font-heading font-bold text-primary-foreground mb-4">Quick Links</h4>
           <ul className="space-y-2">
@@ -66,24 +63,23 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h4 className="font-heading font-bold text-primary-foreground mb-4">Contact Us</h4>
           <ul className="space-y-3">
             <li className="flex items-start gap-3 text-sm">
               <Phone className="w-4 h-4 mt-0.5 text-secondary shrink-0" />
               <div>
-                <a href="tel:+97145551234" className="hover:text-secondary transition-colors">+971 4 555 1234</a>
+                <a href="tel:+971554728133" className="hover:text-secondary transition-colors">+971 55 472 8133</a>
                 <p className="text-primary-foreground/50 text-xs">24/7 Hotline</p>
               </div>
             </li>
             <li className="flex items-start gap-3 text-sm">
               <Mail className="w-4 h-4 mt-0.5 text-secondary shrink-0" />
-              <a href="mailto:care@careathome.ae" className="hover:text-secondary transition-colors">care@careathome.ae</a>
+              <a href="mailto:info@emrs.ae" className="hover:text-secondary transition-colors">info@emrs.ae</a>
             </li>
             <li className="flex items-start gap-3 text-sm">
               <MapPin className="w-4 h-4 mt-0.5 text-secondary shrink-0" />
-              <span>Healthcare City, Dubai, UAE</span>
+              <span>Al Qusais Industrial Area, Dubai, UAE</span>
             </li>
             <li className="flex items-start gap-3 text-sm">
               <Clock className="w-4 h-4 mt-0.5 text-secondary shrink-0" />
@@ -94,7 +90,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/50">
-        <p>© {new Date().getFullYear()} CareAtHome. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} EMRS Home Healthcare. All rights reserved.</p>
         <p>Home Healthcare UAE — Doctor on Call Dubai — Blood Tests at Home Abu Dhabi</p>
       </div>
     </div>
