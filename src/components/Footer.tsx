@@ -16,8 +16,8 @@ const Footer = () => (
     <div className="container">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         <div>
-          <div className="flex items-center mb-4">
-            <img src="/logo.png" alt="EMRS Logo" className="h-20 w-auto object-contain -mr-8 -ml-4" />
+          <div className="flex items-center gap-1 mb-4">
+            <img src="/logo.png" alt="EMRS Logo" className="h-20 w-auto object-contain -mr-4 -ml-2" />
             <span className="font-heading font-bold text-xl text-primary-foreground">EMRS</span>
           </div>
           <p className="text-sm leading-relaxed mb-6">
