@@ -73,7 +73,7 @@ const HeroSection = () => (
               </div>
               <div>
                 <p className="text-xs text-muted-foreground">Available 24/7</p>
-                <p className="font-heading font-bold text-foreground text-sm">Emergency Care</p>
+                <p className="font-heading font-bold text-foreground text-sm">Home Care</p>
               </div>
             </div>
           </div>
