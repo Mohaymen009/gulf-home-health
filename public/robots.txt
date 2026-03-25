@@ -13,5 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://emrs.ae/sitemap.xml
+Sitemap: https://homehealthcare.emrs.ae/sitemap.xml
 

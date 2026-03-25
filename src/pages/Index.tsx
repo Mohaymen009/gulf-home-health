@@ -21,7 +21,7 @@ const Index = () => (
         content="Home healthcare UAE: Doctor on call, at-home blood tests, IV drips & health checkups. Fast, licensed, and convenient care at your doorstep."
       />
       <meta name="keywords" content="home healthcare UAE, doctor on call Dubai, blood tests at home Abu Dhabi, IV drips at home UAE, health checkup at home Dubai, nursing care at home UAE" />
-      <link rel="canonical" href="https://emrs.ae" />
+      <link rel="canonical" href="https://homehealthcare.emrs.ae" />
     </Helmet>
     <Navbar />
     <main>
